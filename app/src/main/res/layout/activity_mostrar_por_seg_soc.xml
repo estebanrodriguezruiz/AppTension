@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.usuario.apptension.MostrarPorSegSoc"
+    android:orientation="vertical">
+    <Spinner android:id="@+id/CmbOpciones2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/plano"
+        android:layout_width="302dp"
+        android:layout_height="35dp"
+        android:text="Introduzca el número de la Seguridad Social"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/txt_seguridad_social_busqueda"
+        android:layout_width="302dp"
+        android:layout_height="41dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="25dp"
+        android:inputType="text"
+        />
+
+    <ListView
+        android:id="@+id/Mostrardatos"
+        android:layout_width="314dp"
+        android:layout_height="342dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+         />
+
+</LinearLayout>
+

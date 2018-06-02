@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutintroduce"
+    android:orientation="vertical">
+    <Spinner android:id="@+id/CmbOpciones3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Introducir Paciente"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/txt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lbl_name"
+        android:inputType="text"
+        android:selectAllOnFocus="false"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/txt_last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lbl_last_name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txt_diastole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lbl_tension_diastole"
+        android:inputType="text"
+        android:selectAllOnFocus="true" />
+
+    <EditText
+        android:id="@+id/txt_sistole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lbl_tension_sistole"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/txt_segsoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lbl_num_segsoc"
+        android:inputType="text" />
+
+
+    <Button
+        android:id="@+id/Btnenviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:textAllCaps="false" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="1px"
+        android:text="Editar y borrar"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        />
+    <ListView
+        android:id="@+id/listViewPacientes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+    <Button
+        android:id="@+id/Btnupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actualizar"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/Btndelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Borrar"
+        android:textAllCaps="false" />
+
+
+
+</LinearLayout>
